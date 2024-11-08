@@ -15,10 +15,12 @@ The display shows: satellites, date, time, direction of travel (north, south, et
 
 
 Wiring:
-
+...
   CYD2USB             -  GPS Modul
 
 IO16 (RGB LED)        -    TX
 IO17 (RGB LED)        -    RX
 %V close to USB port  -    VCC
 GND (SD Shield)       -    GND 
+
+...
