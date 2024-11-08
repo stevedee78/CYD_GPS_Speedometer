@@ -11,3 +11,14 @@ Description:
 The display shows: satellites, date, time, direction of travel (north, south, etc.), speed, trip odometer and a button to reset the kilometres you have driven.
 
 
+![PictureScreen](https://github.com/user-attachments/assets/f651522e-67e5-49d3-9c9b-003068cdf735)
+
+
+Wiring:
+
+  CYD2USB             -  GPS Modul
+
+IO16 (RGB LED)        -    TX
+IO17 (RGB LED)        -    RX
+%V close to USB port  -    VCC
+GND (SD Shield)       -    GND 
