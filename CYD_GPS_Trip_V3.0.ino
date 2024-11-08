@@ -1,5 +1,3 @@
-#include "arduino_secrets.h"
-
 // erstellt von stevedee78 am 08.11.2024 
 
 #include <SPI.h>
@@ -8,7 +6,7 @@
 #include <TinyGPS++.h>
 #include <lvgl.h>
 
-// Pins fÃ¼r Touchscreen
+// Pins fuer Touchscreen
 #define XPT2046_IRQ 36
 #define XPT2046_MOSI 32
 #define XPT2046_MISO 39
@@ -54,7 +52,7 @@ void setup() {
 
   // Display initialisieren und invertieren
   tft.init();
-  tft.setRotation(1);  // Ãndern Sie dies ggf. auf 2 oder 3 fÃ¼r gewÃ¼nschte Orientierung
+  tft.setRotation(1);  // Aendern Sie dies ggf. auf 2 oder 3 fÃ¼r gewÃ¼nschte Orientierung
   tft.fillScreen(TFT_BLACK);
 
   // LVGL initialisieren
@@ -79,7 +77,7 @@ void setup() {
   lv_obj_set_style_bg_color(scr, lv_color_black(), LV_PART_MAIN | LV_STATE_DEFAULT);
   lv_scr_load(scr);
   
-  // Geschwindigkeit - GroÃe und fette Schrift
+  // Geschwindigkeit - Groesse und fette Schrift
   label_speed = lv_label_create(scr);
   lv_obj_set_style_text_color(label_speed, lv_color_white(), LV_PART_MAIN | LV_STATE_DEFAULT);
   lv_obj_set_style_text_font(label_speed, &lv_font_montserrat_40, LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -118,7 +116,7 @@ void setup() {
     resetOdometer();
   }, LV_EVENT_CLICKED, NULL);
 
-  // Text auf dem Button hinzufÃ¼gen und zentrieren
+  // Text auf dem Button hinzufuegen und zentrieren
   lv_obj_t* resetLabel = lv_label_create(resetButton);
   lv_label_set_text(resetLabel, "Reset");
   lv_obj_center(resetLabel);  // Text zentriert im Button ausrichten
@@ -139,7 +137,7 @@ void updateGPSData() {
     sprintf(speed, "%d km/h", int(gps.speed.kmph()));
     lv_label_set_text(label_speed, speed);
 
-    // TageskilometerzÃ¤hler aktualisieren
+    // Tageskilometerzaehler aktualisieren
     if (gps.location.isValid()) {
       if (lastLatitude != 0 && lastLongitude != 0) {
         double distance = TinyGPSPlus::distanceBetween(
