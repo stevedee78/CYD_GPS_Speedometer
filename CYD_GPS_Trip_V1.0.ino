@@ -1,5 +1,3 @@
-#include "arduino_secrets.h"
-
 // erstellt von stevedee78 am 08.11.2024 
 
 #include <SPI.h>
