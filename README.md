@@ -8,7 +8,7 @@ Hardware required:
 ```
 Description:
 
-The display shows: satellites, date, time, direction of travel (north, south, etc.), speed, topspeed, avg trip odometer and a button to reset the kilometres you have driven.
+The display shows: satellites, date, time, direction of travel (north, south, etc.), speed, topspeed, avg, trip odometer and a button to reset the kilometres you have driven.
 
 
 ![PictureScreen](https://github.com/stevedee78/CYD_GPS_Speedometer/blob/main/Bilder/Version2.jpg)
